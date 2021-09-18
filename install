@@ -1,0 +1,72 @@
+
+
+down=$EXTERNAL_STORAGE/Download
+dpak=$EXTERNAL_STORAGE/Download/pak
+quickbms=$PREFIX/share/quickbms
+quickbms_dir=$PREFIX/share/quickbms
+tx=$HOME/indopak
+txz=$PREFIX/bin
+
+NOCOLOR='\033[0m'
+LIGHTGREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+
+
+clear
+if [[ ! -d "$tx" ]]
+then
+mkdir $tx &>/dev/null
+cd $tx
+else
+cd $tx
+fi
+cd $tx
+if [[ ! -d "$tx/output" ]]
+then
+mkdir $tx/output &>/dev/null
+mkdir $tx/etc &>/dev/null
+mkdir $tx/Logs &>/dev/null
+chmod +x  Active.sav
+mv Active.sav $tx/etc
+chmod +x  Cached.sav
+mv Cached.sav $tx/etc
+chmod +x FileUseTime.txt
+mv FileUseTime.txt $tx/Logs
+chmod +x ShadowTrackerExtra.log
+mv ShadowTrackerExtra.log $tx/Logs
+fi
+cd $tx
+chmod +x custom
+yes | cp -rf custom $txz
+
+cd $down
+if [[ -d "UserCustom" ]]
+then
+mkdir $dpak &>/dev/null
+fi
+
+function install {
+echo "Please wait .."
+echo " "
+sleep 2
+cd $tx
+sleep 1
+echo -e "${LIGHTGREEN}Tools is Checking Package....${NOCOLOR}"
+sleep 3
+pkg update && pkg upgrade
+pkg install zip
+pkg install unzip
+apt update && apt upgrade
+exit
+}
+
+install
+clear
+echo " ======================= "
+echo -e " ${LIGHTGREEN}Installasi selesai "
+echo " ======================= "
+echo " "
+echo -e " ${YELLOW}silahkan ketik exit dan jalankan TERMUX anda ${NOCOLOR}"
+echo " "
+echo -e " kemudian mengetikan ${LIGHTGREEN} custom ${NOCOLOR}(huruf kecil semua ) "
+exit
