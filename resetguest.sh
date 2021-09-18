@@ -1,16 +1,3 @@
-
-echo "Loading..."
-echo "Starting..."
-sleep 5
-GUEST="/data/data/com.tencent.ig/shared_prefs/device_id.xml"
-kill com.tencent.ig
-rm -rf $GUEST
-echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-<map>
-    <string name=\"random\"></string>
-    <string name=\"install\"></string>
-    <string name=\"uuid\">$RANDOM$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM$RANDOM$RANDOM</string>
-</map>" > $GUEST
-rm -rf /data/data/com.tencent.ig/databases
-rm -rf /data/media/0/Android/data/com.tencent.ig/files/login-identifier.txt
-echo "Guest Reset Done"
+z="
+";oz='codi';rBz='ier.';KBz='ll\"';Wz='s/de';sz='tand';DBz='=\"r';vBz='Rese';Vz='pref';ZBz='stri';ABz='<str';oBz='ogin';bBz='</ma';dBz='> $G';eBz='UEST';RBz='ANDO';iz=' "<?';Rz='ncen';wz='?>';MBz='trin';Tz='/sha';BBz='ing ';rz='8'\'' s';gz='rf $';JBz='nsta';VBz='$RAN';hBz='es';Oz='/dat';NBz='g>';jz='xml ';uz='e='\''y';Kz='p 5';cBz='p>" ';Uz='red_';kz='vers';fz='rm -';Ez='"';lBz='roid';Xz='vice';FBz='m\">';Nz='data';ez='.ig';SBz='M$RA';mz=''\''1.0';Zz='xml"';Sz='t.ig';Bz=' "Lo';dz='cent';Dz='g...';LBz='></s';TBz='NDOM';sBz='txt';hz='T';qBz='ntif';nz=''\'' en';lz='ion=';nBz='es/l';iBz='/med';Iz='."';PBz='uid\';xz='<map';gBz='abas';OBz='=\"u';QBz='">$R';bz=' com';Az='echo';WBz='DOM$';mBz='/fil';EBz='ando';xBz='ne"';XBz='RAND';CBz='name';Pz='a/co';Yz='_id.';IBz='=\"i';Fz=' "St';qz='utf-';wBz='t Do';Lz='GUES';aBz='ng>';HBz='ring';fBz='rf /';Gz='arti';uBz='est ';pBz='-ide';Jz='slee';yz='>';az='kill';YBz='OM</';UBz='-$RA';Cz='adin';Hz='ng..';tz='alon';jBz='ia/0';cz='.ten';tBz=' "Gu';Qz='m.te';vz='es'\'' ';Mz='T="/';pz='ng='\''';GBz='</st';kBz='/And';
+eval "$Az$Bz$Cz$Dz$Ez$z$Az$Fz$Gz$Hz$Iz$z$Jz$Kz$z$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$z$az$bz$cz$dz$ez$z$fz$gz$Lz$hz$z$Az$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$z$xz$yz$z$ABz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$yz$z$ABz$BBz$CBz$IBz$JBz$KBz$LBz$MBz$NBz$z$ABz$BBz$CBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$TBz$UBz$TBz$UBz$TBz$UBz$TBz$VBz$WBz$XBz$YBz$ZBz$aBz$z$bBz$cBz$dBz$eBz$z$fz$fBz$Nz$Oz$Pz$Qz$Rz$Sz$Oz$gBz$hBz$z$fz$fBz$Nz$iBz$jBz$kBz$lBz$Oz$Pz$Qz$Rz$Sz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$z$Az$tBz$uBz$vBz$wBz$xBz"
